@@ -1,0 +1,76 @@
+/* Corpo da Página toda */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    padding: 0;
+    font-size: medium;
+}
+
+/* Configuração Header NavBar*/
+header {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin:auto;
+}
+
+header li{ 
+    display:inline-block;
+}
+
+header li a{ 
+    display:inline-block; 
+    font-size:large; 
+    padding:10px 20px;
+}
+
+nav {
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    width: 90px; 
+    height: 90px; 
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(to right, blue, rgb(70, 142, 184), rgb(255, 230, 88));
+}
+
+.menu li {
+    margin: 1px 15px;
+}
+
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+
+.menu li a:hover {
+    color: #ffd700; /* Cor ao passar o mouse */
+    text-decoration: none;
+}
