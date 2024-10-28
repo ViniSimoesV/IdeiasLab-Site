@@ -24,8 +24,8 @@ header {
     }
 
     header li a{ 
-        display: inline-block; 
-        font-size: x-large; 
+        display: inline-block;
+        font-size: large; 
         padding: 10px 20px;
     }
 
@@ -92,7 +92,7 @@ header {
 
 /*  Rodapé  */
 footer {
-    background-color: #0492C2;
+    background-color: #4faece;
     color: white;
     text-align: center;
     padding: 10px 0;
