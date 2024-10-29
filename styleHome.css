@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family:'Times New Roman', Times, serif;
+    font-family: Arial, sans-serif;
     padding: 0;
     font-size: medium;
 }
@@ -69,7 +69,8 @@ header {
         color: #ffd700; /* Cor ao passar o mouse */
     }
 
-.half-background {
+
+    .half-background {
     background-image: url('img/img1.jpeg'); /* Define a imagem de fundo */
     background-size: cover; /* Faz a imagem cobrir todo o fundo da div */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
@@ -80,11 +81,76 @@ header {
     top: 0;
     left: 0;
     z-index: -1; /* Coloca a imagem atrás do conteúdo */
+    }
+
+
+
+
+/* Conteudo */
+h1 {
+    padding-left: 15px;
 }
 
-.content {
+.caixa h3 {
+    color: #fffb2a;
+}
+
+.caixaUm {
+    display: flex; /* Faz a caixa se ajustar ao conteúdo */
+    /* border: 2px solid rgb(252, 250, 122);  Borda colorida */
+    border-radius: 5px; /* Bordas arredondadas */
+    color: #FCDA07;
+    background-color: #113665; /* Fundo colorido */
+    margin-top: 20px; /* Espaço acima da caixa */
+    margin-bottom: 20px; /* Espaço abaixo da caixa */
+    padding-left: 20px; /* Espaço dentro da caixa */
+    text-align: center;
+}
+
+.columnUm {
+    flex: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-left: 20px;
+    /* border: 1px solid rgba(255, 0, 0, 0); */
+    color: #ffffff;
+    font-size: large;
+    background-color: #4faece;
+    border-radius: 5px;  /* Bordas arredondadas */
+}
+
+.caixaDois {
+    display: flex; /* Faz a caixa se ajustar ao conteúdo */
+    /* border: 2px solid rgb(252, 250, 122);  Borda colorida */
+    border-radius: 5px; /* Bordas arredondadas */
+    color: #FCDA07;
+    background-color: #113665; /* Fundo colorido */
+    margin-top: 20px; /* Espaço acima da caixa */
+    margin-right: 20px; /* Espaço acima da caixa */
+    margin-bottom: 20px; /* Espaço abaixo da caixa */
+    padding-right: 20px; /* Espaço dentro da caixa */
+    text-align: center;
+}
+
+
+.columnDois {
+    flex: 1;
+    padding: 25px;
+    margin-right: 20px;
+    color: rgb(252, 250, 122); 
+    background-color: #4faece;
+    border-radius: 5px;  /* Bordas arredondadas */
+}
+
+.apresentacao {
     padding: 20px;
     margin-top: 50vh; /* Afasta a seção para que ela apareça após a imagem de fundo */
+    background-color: white; /* Para distinguir visualmente o conteúdo */
+}
+
+.metodologia {
+    padding: 20px;
     background-color: white; /* Para distinguir visualmente o conteúdo */
 }
 
@@ -99,6 +165,13 @@ footer {
 }
 
 footer a {
+    color: white;
+    margin-left: 10px;
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+footer a.email {
+    font-size:15px;
     color: white;
     margin-left: 10px;
     transition: color 0.3s ease; /* Transição suave de cor */
@@ -120,7 +193,7 @@ footer a:hover {
     align-items: center;
     text-align: center;
     margin: 0 5px;
-flex:5;
+    flex:5;
 }
 
 .footer-column p {
